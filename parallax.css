@@ -1,0 +1,57 @@
+body {
+    height: 100%;
+    margin: 0;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.pimg1,
+.pimg2,
+.pimg3 {
+    position: relative;
+    background-position: center;
+    background-size: cover;
+   background-attachment: fixed;
+   animation: delay 3ms;
+}
+
+.pimg1 {
+   background-image: url(https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/218894fb-2ed2-4a32-b4dd-7e017fccd106/df2b9m9-185f3531-93a9-41ed-af8f-9f50634cdd07.jpg/v1/fill/w_1192,h_670,q_70,strp/goku_4k_wallpaper_for_pc_by_rockydevilweeb_df2b9m9-pre.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9NzIwIiwicGF0aCI6IlwvZlwvMjE4ODk0ZmItMmVkMi00YTMyLWI0ZGQtN2UwMTdmY2NkMTA2XC9kZjJiOW05LTE4NWYzNTMxLTkzYTktNDFlZC1hZjhmLTlmNTA2MzRjZGQwNy5qcGciLCJ3aWR0aCI6Ijw9MTI4MCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.1APBchVh0q4MUHzQQdeVhF3lDK-oeblMvB4glwcBdsg);
+    height: 1000px;
+}
+
+.pimg2 {
+    background-image: url(https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/e41fdf46-548b-439f-84f7-28c3545de3b4/d9sqs0p-7edfdda0-d730-4d48-a5b6-b095dfaefc95.png/v1/fill/w_1192,h_670,q_70,strp/boundless_by_klarseolt_d9sqs0p-pre.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTA4MCIsInBhdGgiOiJcL2ZcL2U0MWZkZjQ2LTU0OGItNDM5Zi04NGY3LTI4YzM1NDVkZTNiNFwvZDlzcXMwcC03ZWRmZGRhMC1kNzMwLTRkNDgtYTViNi1iMDk1ZGZhZWZjOTUucG5nIiwid2lkdGgiOiI8PTE5MjAifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.RbscmGEBow4R8tC6Q3QHbQ9mAiZXBqNGzFJeQACziTc);
+    height: 400px;
+}
+
+.pimg3 {
+    background-image: url('https://images.unsplash.com/photo-1659221207851-1dcfc8b7240a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwzM3x8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60');
+    height: 400px;
+}
+
+.section {
+    text-align: center;
+    padding: 50px 80px;
+}
+
+.section-light {
+    background-color: whitesmoke;
+    color: gray;
+}
+
+.section-dark {
+    background-color: black;
+    color: white;
+}
+
+.ptext {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    left: 40%;
+    font-size: 30px;
+    letter-spacing: 8px;
+    color:darkgrey;
+    animation: both;
+}

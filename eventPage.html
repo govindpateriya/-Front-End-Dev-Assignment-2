@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Website</title>
+    <style>
+        nav {
+
+            float: right;
+            margin-top: -2.5%;
+            margin-right: 2.5%;
+        }
+
+        nav a {
+
+            color: rgb(255, 255, 255);
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        .date {
+            float: right;
+
+        }
+
+        .button {
+            background-color: white;
+            color: black;
+            border: 2px solid #e7e7e7;
+            padding: 10px 20px;
+            text-align: center;
+            display: flex;
+            margin-left: 45%;
+
+        }
+
+        .card {
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            transition: 0.3s;
+            width: 40%;
+            display: flexbox;
+        }
+
+        .card:hover {
+            box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+        }
+
+        .container {
+            padding: 2px 16px;
+        }
+
+        .card {
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            max-width: 300px;
+            margin: auto;
+
+            font-family: arial;
+        }
+
+
+
+        .profile {
+            display: flex;
+            padding-bottom: 2%;
+            object-fit: cover;
+        }
+
+        .paragraph {
+            width: 40%;
+            padding-left: 15px;
+            margin-left: 25vw;
+            margin-top: 2vw;
+            float: left;
+            font-style: italic;
+        }
+
+        .profilecard {
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            transition: 0.3s;
+            width: 15%;
+            margin-left: 70%;
+            margin-top: 2%;
+
+        }
+        .row9a,.row10a{
+    display:grid;
+    margin-left:20%;
+}
+.row9b{
+    
+    position: relative;
+    left: 40%;
+    bottom: 40vh;
+}
+.time{
+    position:relative;
+    top: 6vw;
+}
+.row10{
+  margin-top:-18vw;
+    
+}
+.row10b{
+    position: relative;
+    left: 25%;
+    bottom: 25vh;
+}
+#width,#width2,#col2{
+margin-left: -20vw;
+position: relative;
+bottom: 20vh;
+}
+#button{
+    background-color: rgb(10, 143, 39);
+    width: 10%;
+    height: 5vh;
+    border-style: none;
+    color: white;
+}
+.col1{
+    position: relative;
+    left: 40vw;
+    bottom: 35vw;
+}
+.col2{
+    position: relative;
+  left: 50vw;
+bottom: 43vh;
+
+}
+#time1{
+    margin-top: 20vh;
+}
+.row13{
+    position: relative;
+    left: 25vw;
+}
+.row13a{
+    position: relative;
+    left: 50vw;
+    bottom: 15vh;
+
+}
+#div{
+    margin-top: -35vh;
+}
+.ragister{
+    margin-left: 20vw;
+}
+.col5{
+    position: relative;
+    left: 70vw;
+    bottom: 50vh;
+}
+    </style>
+
+</head>
+
+<body>
+
+    <div style="background-color:#244d60 ; ">
+        <br><br>
+        <span>
+            <h1 style="margin-left: 15%; color: #e7e7e7;">STYLES <BR> CONFERENCE</h1>
+        </span>
+        <span style="margin-top: -6% ;  margin-right: 15% ;" class="date">
+            <p>August 24-26th--Chicago,IL</p>
+        </span>
+        <br>
+        <nav>
+            <a href="#home">HOME</a>
+            <a href="#SPEAKERS">SPEAKERS</a>
+            <a href="#SCHEDULE">SCHEDULE</a>
+            <a href="#VENUE">VENUE</a>
+            <a href="#REGISTER">REGISTER</a>
+        </nav>
+        <br><br>
+
+        <span style="text-align:center ;">
+            <H2 style="color:gray;">Dedicated to the Craft of Building Websites</H2>
+
+            <p>Every year the brightest web designers and front-end developers on <br> Chicago to discuss the latest
+                tech logies. Join us this August! </p>
+        </span>
+
+        <button class="button">Register Now</button>
+
+        <br>
+        <br>
+    </div>
+
+    <h2 style="text-align:center">User Profile Card</h2>
+    <div class="profile">
+        <div class="card">
+            <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/218894fb-2ed2-4a32-b4dd-7e017fccd106/df2b9m9-185f3531-93a9-41ed-af8f-9f50634cdd07.jpg/v1/fill/w_1280,h_720,q_75,strp/goku_4k_wallpaper_for_pc_by_rockydevilweeb_df2b9m9-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9NzIwIiwicGF0aCI6IlwvZlwvMjE4ODk0ZmItMmVkMi00YTMyLWI0ZGQtN2UwMTdmY2NkMTA2XC9kZjJiOW05LTE4NWYzNTMxLTkzYTktNDFlZC1hZjhmLTlmNTA2MzRjZGQwNy5qcGciLCJ3aWR0aCI6Ijw9MTI4MCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.1APBchVh0q4MUHzQQdeVhF3lDK-oeblMvB4glwcBdsg" alt="John" style="width:100% ;object-fit: cover;">
+            <h2>World Class Speakers</h2>
+            <p>Harvard University</p>
+
+
+        </div>
+        <div class="card">
+            <img src="data:image/jpeg;base64,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" alt="John" style="width:100% ;object-fit: cover;">
+            <h2>Three Inspiring Days</h2>
+            <p>Harvard University</p>
+
+
+        </div>
+        <div class="card">
+            <img src="https://rb.gy/g0cn6u" alt="John" style="width:100% ;object-fit: cover;">
+            <h2>The Chicago Theatre</h2>
+            <p>Harvard University</p>
+
+        </div>
+    </div>
+    <footer style="background-color:#244d60 ; ">
+        <br><br>
+        <p>© STYLES CONFERENCE </p>
+        <nav>
+            <a href="#home">HOME</a>
+            <a href="#SPEAKERS">SPEAKERS</a>
+            <a href="#SCHEDULE">SCHEDULE</a>
+            <a href="#VENUE">VENUE</a>
+            <a href="#REGISTER">REGISTER</a>
+        </nav>
+        <br><br>
+    </footer>
+    <div style="background-color:#244d60 ; ">
+        <span>
+            <h1 style="margin-left: 15%; color: #e7e7e7;">STYLES <BR> CONFERENCE</h1>
+        </span>
+        <span style="margin-top: -6% ;  margin-right: 15% ;" class="date">
+            <p>August 24-26th--Chicago,IL</p>
+        </span>
+        <nav>
+            <a href="#home">HOME</a>
+            <a href="#SPEAKERS">SPEAKERS</a>
+            <a href="#SCHEDULE">SCHEDULE</a>
+            <a href="#VENUE">VENUE</a>
+            <a href="#REGISTER">REGISTER</a>
+        </nav><br><br>
+    </div>
+    <div style="text-align: center; background-color: aquamarine;">
+        <h2>Speakers</h2>
+        <p>we're happy to welcome over twenty Speakers to present on the industry's latest <br>
+            technologies . prepare for an inspiration extrawaganza.
+        </p>
+    </div>
+    <div>
+        <aside class="paragraph">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut nesciunt deserunt earum explicabo temporibus
+            optio natus minima unde saepe tenetur necessitatibus facilis consectetur eos, distinctio voluptas. Vitae rem
+            numquam delectus. <br><br>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut nesciunt deserunt earum explicabo temporibus
+            optio natus minima unde saepe tenetur necessitatibus facilis consectetur eos, distinctio voluptas. Vitae rem
+            numquam delectus. <br><br>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut nesciunt deserunt earum explicabo temporibus
+            optio natus minima unde saepe tenetur necessitatibus facilis consectetur eos, distinctio voluptas. Vitae rem
+            numquam delectus.<br><br>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut nesciunt deserunt earum explicabo temporibus
+            optio natus minima unde saepe tenetur necessitatibus facilis consectetur eos, distinctio voluptas. Vitae rem
+            numquam delectus.<br><br>
+        </aside>
+    </div>
+
+    <div class="profilecard">
+        <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBwgHBgkIBwgKCgkLDRYPDQwMDRsUFRAWIB0iIiAdHx8kKDQsJCYxJx8fLT0tMTU3Ojo6Iys/RD84QzQ5OjcBCgoKDQwNGg8PGjclHyU3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3N//AABEIAJYAyAMBIgACEQEDEQH/xAAcAAEAAQUBAQAAAAAAAAAAAAAABgEDBAUHAgj/xAA+EAABAwIEAwQIAwUJAQAAAAABAAIDBBEFEiExBkFREyJhcQcUMoGRobHBFVLRI0JikuEkMzRDcnOC8PEl/8QAGgEAAgMBAQAAAAAAAAAAAAAAAAQDBQYCAf/EACgRAAICAQQBBAICAwAAAAAAAAABAgMRBAUSITETMkFRIoFhcRRCwf/aAAwDAQACEQMRAD8A7iiIgAiIgAiKiAKqhQustXXYxHGTHAO0fzPIKC/UV0R5WPB1GEpvCNm5zWi7iAPFYE+LUkVwH9oRyZr81op55qk3nkLug2AVotAVFfvks4qXX8jkNIv9mbaTG3n+7gHm4qxJjVWNuyH/AB/qtHimLUeFUzp62UMYNhuT5Bc/xj0kyuzNwqkDQdpKjX5KCq7cNS/xl0dyhTX5R1j8crQdoiPFh/VXGcQTDSSGNw/hJC+eKzizGqxxM2JztB/di7gHwWbg/GmMYc7vVJrITvHOb28nbp7/AB9fFclZ2RqVEnjB9DwY9Sv/ALxr4/Ei4Wxhnhmbmika9vUFcs4Z4npMfje2IOhqIx+0hfvbqDzCkcOdhD43uaeRabKGO630y4XxOpaWMlmDJrcKqj9JjL4zkqxnb+do194W8imjmYHxODmHYgq502sq1CzB/oUnXKHkuIiJojCIiACIiACIiACIiACIiACtyPbEwveQGjUkr04gC5Ngo3iteaqTs2EiFp/m8UnrNXHTQ5Pz8IkqrdksFcRxKSpd2cV2w8+rlhNFgjQqrHX3zvnym+y0hCMFhDlstHxNxDTYNSucXNfPlu2O/wAyrfFvEkWBUehDqmQfs2/crkdbPW4xWBt3zVEhva/L9E9t+3u985+0jtt49R8lnF8aq8Sq3zTTPe5xOhOg8lrMpOrr/qp3hnAzQ3NWvLnnk3YLbs4Qw+NwvFm8ytIra61xiuhX0Jy8nL2U8z75InEeS9iKVntNc077LqUmB00TSI4w3yUbxnC8jXOAPkvFqk3jB7LS4WSOYRik+E4hHV05ySN08COhXa+Gcep8apGvjtHK0d+O+3iPBcKq25HabLY8NY5Ng9fHURuIA9pvJw6JbX6FaiHKPuPKrXB8X4O+OAcNl7pKqejlzQm4O7DsVi4fVxVtHDVQm8crA9p81k2usrGc6p5XTQ+0pLvwSehrY6yLPHoRo5p3aVlKHwzyUkwliO24/MOilFHUx1UDZYzodx0K1m3bgtTHjL3IrbqfTeV4MhERWZAEREAEREAEREAFS6qrU8giifI46NFyvJNRWWC76NZjdXlaKdm7tXkch0WjA6q5NK6aZ8jt3m682WI1upeoucvj4Laqv04pFVj11U2kpZZ37Mbc3WQoT6TcRNPhbKWN1pJjr5D/ANUWnqdtqgjuUuKyc44gxeXFMVfPI4u73db4Kc8D4MynpRUStBml1zEagLneB0xrMVgiG736+AG67HTT0lAxsMkzGOAHdJ1+C2Mo8Eq4idXbc2bBsICOiCrHW0soIimY49F6e9oXPDBLyyYVTGLbKPYpHmuAAtniuMR00hibG6R3QKN1eMVspJZhb3NHMKKVbfaO+aS7IpjVE2KRxYLC9yForkOUxraiHEbtcx0MzRrG7RwUTq4XQyEO+Kaol1hiV0cPKOp+inFHT0c2HyOJMJDowfynf4H6roK4x6L6rscfZEX5e1YW/ddmBusvutXp6h4+RzTyzWHC4V/Cqw0dSGvP7KTRw6eKsq3I1JU3Sqmpx+CWUVJcWTQG6qtbgdT6xRhrzeSPun7LYhbmm2NtanHwyolFxbTKoiKU5CIiACIiAC1WOS5acRg+2dfILaqP44/PV5OTWj4/9sq7dbfT0z/nom08eViNbZVRFjS0KFcr9IEnrGOthe4kMZa3ILqp2XJuOoy3E5ZW3B9m/nr/AE9ytNpx/kdkdvsZpeEqGqGLtqI4XtjbcCZze6CefjbwU9lp4oIzajfIDq+V0ZcT4rScH4g6toRAyQMnpe47oWm9j4X+yk1fhz6qNuedzRYF0Y2cfFauUY+WxKEpeEjW0stLHWtaGdlKdrgtv7lu8TqhDQGdvIKNUfDkNNU1Ek5kdTvBzxj2beS8VmCyx8PwTy1tZPUNiaRG+ZxY7TYgnfxUEsfZPFy+jFjraqtecjALk3kkdlaB7tV4qKltO2/r0Dtu6y/33V+ktWRRSMiDSDmDebSrVRw/DKwksYy7rmwuSvE4fJ4/Ufgwsap5qYxyOY2e5sMmjgVGsZyueHAWPO6nFbCBHEy3s/UD+qj2Mws9TnIAuBobI9SKsWEcuuTj2zR8P1pw/F6WqucscrS7yvr8l9DwuD4w4G/ivmttsw6LuvAle6v4ao5JHEvYDG4nnl0HysqzfKeo2INJLzEkio4XCqEWbHTKwObsa8MJs2UZfeNlJgoa15jnjkH7rgVMWm4B6hajZLeVTg/gQ1ccS5fZ6REV2KBERABERABRnEnZq6UnkbKTKMV4/tk3+tUm+Z9GP9/8GtJ7zGKohRZcsDzIbMJ6LlfpHmihqmtJsXtGg+S6jUuyQOcdhuuD8ZVrsQxyolLu61+UDy0Vvs9fO7P0Q3z4wL/B00jOIoadr8raglrhfewzD6Lr8skTr3e1ul+9ouL8JsL+JKEtNnMfn8wBqPhddlmdenc3S9lpLHhkOnjlZMNz46gvhY+7SCHvadGjn77K3xDUwR0DXukaWkaW6LKibFTUrQS1pcNb81qsXp6auYGy2axvs5T9kvLtDMYPPSI5Q1OSpaYgZYpO93BfLc/Rb1735LimmP8AKPutfT09LRWETxa/RbUTiSnuw3AXHLHR0oYfZpK6Zxks4WtoGjYBRzGJbwyM6iy31cS+V11GsTfGKljZXZWncr2vuRHfhR6NCQWuI6Fde9Fsh/Acp27RxHxXJaktFQ7I4ObfQjmuqei4n8H30EjlHu/emFdKsWHQG7Kq8s9kL0skPluUaKX0js1NC7qwH5KIybKWUH+Cg/22/RX2xN85oU1nhGQiItKIBERABERABRzFW5K2TxsQpGtHj0dpY5BsWlpVTvNbnpsr4Yxpniw1RKIh0WSLMxcRk7Omkde1mlfPddmfXT5jcdo4g+9ds4xrhBhNQGusS3Lm6XP6Li847zy4WPLyWi2WDjGUvsV1PjBhCV0E0csbi18bw5pG9wu8000ddh0c0RBZNGHC3iFwN+pU+9HPEjIYm4PWPtZ39mc7Yj8l/jZXd0crIvTPEsEtfh1RHirKqZwqaMRuApyLHNbTVbCoq6d0bf8A4rc2U5m3AtdZzAJW8vALFqKJtyXOd8VFGfGI5iEn+RB8TE0rTGKKCDk0tncSNd9lssPh9RwwMllMsrtXOOnwWZW0kUb7gg21WnqZr89EvObbO2o56Mert3ndd1Ccelz1pa3UAAKU11UAHMabkjfooVUOMlTI48yp9PHvIpqZZWDw1q6x6KXtfhEtjqyQscPHf6Ob8FypoXUPRQx0dLWgiwzsPkbH+iX3VZ0zONL7zorNl6Xlmy9LIFieXi+nXRS+AZYmN6NAUWo4zNWws5Z7nyGqljRZaPYq2oyn+hDVy7SKoiLQCYREQAREQAWDisHbUj7aub3gPJZy8kX5KO6tW1uD8M6i+LyQ9xs26gfEvHbKGrloqaIyPj7rnZrC/wAFOeK5oMFgmnqX5ILFwP2C+fcVq/XsRqarLlEshcG9As1oNvzbJWrpD9t+IJxZn1+O1uLPAqH2i2EYOl+visGZmaC50I5rBceRXvtyYg08jay0VdUYLEVhCjm5eTFdcHUWXkaG40VyQ31Vsamw3U6IjsPCGKz/AINRulc6VxhbmzHUmy3EuKhxuYn/AMqiHCT3Nw6nB/IApKzVuir23llpFfijWV1ZmL3a6npZaCpkc7RhsSpNXxBzDdutlpWUWaTPY6clxk9aNJVM7KFx52uooNXHzUzxlmWIt8FD8mSVzehTWnfTE9Qu0OYsLm+y7fwThX4ZgzWyOBnmd2spHUgC3uAA+K4nCbOzA5SNiN12H0f41HiOGNgc8CeHuubz0G/kq7eFN0rj4z2d6VpS7JgzZVcbINkDHPe1jdS42AWXSbaSHvBtOH4S6SSoOwGVvnzW9CsUdO2mp2RtGw18Sr62+i0/oUKHz8/2VFs+c2yqIibIwiIgAiIgAqKqIAjPHvC0fFWASURcI6lh7SmkOzZANL9Qdivmirp5qKqmpauN0VRC8sljcLFrhuvryy576UPR+OI4RieFAMxWFlizQCpaNgf4hrY+JB8OXH6Pcnz84MyvNznBt4K05yTxS080kNRG+KaNxbJHIMrmOHIgryvUgyVGqowkPBFrgiyuR2vrsvH75Xp4TzhypEbWRSxmPMMzRy8QpZE6w1UQwMtxOjggLw2fQMd0PI/Yre0tTJHmp6phiniNnMcPp4JK6HF5LCizksGwl74Vrsw2M2avcB7R2mqu1dmR7HRQPwTkSxlmbZYFLw6+rpaislYQJCGweNt3D36e5Tai4bdWzNnrmuZSjXLsZP0C39VQxmJpDBYCzGDQD9AntNVLGWIai1Zwjh09BNTVIglaGuJs25tdXKaor8FqmVMfaQSDUEjQ+HiunOwqCrlMFZA2Zj3a3HzWrxDg6encfw/EZQx3+RM4mw/1D73U06cp58EKsNhw56RaOqY2DGW+qT8pRrG7z6fRdRwGnbJE2suHMkaDERzaefvXPuDvRrTVE0dZjlBH2TDnYO2c7tj/ABAgd36rrLWgAAclWV7XRXd6qX6JZXyceJ6REVmQBERABERABERABERABERAEH9IHo6w/ixjqqHLSYs1tmVAHdkHJsg5jx3C+fuIeHsV4brfVMXpHQPuQ1+7JPFrtj9V9crCxTC6HF6N9HidJDVU7/ajmaHDz8CgD5CadbKi7RxN6EonvfUcM1wivr6pVXc3/i/ce8Fc0xzg7iPA3uGI4RVNjb/nxMMkf8zdB77IAx+H8R9TroDI6zWvzNJOxXaWUmG4/TxVM0f7XIB2jHFrrfRcFbGHSBjbZybEdF1rhOaWHD4QHvFm2Nze69TT6aPctdo3D8Iiop7QTyuZvZwB+a2UFPAcjxFmeOb9bLF7Z0xaC1pKzxdoZG097S5HJexqgnlI9lbNrtmVHa/eN3dFar81msHtP0Kzaame4ARRud4gfdZEeAzT1HaVDxHGNmjUlTtpLshwaqgpGtJyNLnbea29BgAfIKjEGhxvdsXTz/RbqmpIaUWiZrzcdSVkKGU8rCOlE8taALACwXpEXB0EREAEREAEREAEREAEREAEREAEREAUQBEQBra7h/B8Q/x2F0c5O5fC0k+9WmcL4LGwMioI42jYMJaPkURAF2Ph/C4/ZpR73OP3WTFh1HCbx08YPW10RAGSAALAABLWVUQAREQAREQAREQAREQAREQB/9k=" alt="Avatar" style="width:40%">
+        <div class="container1">
+            <h4><b>John Doe</b></h4>
+            <p>Architect & Engineer</p>
+        </div>
+    </div>
+    <br><br><br><br><br><br><br><br><br><br><br><br>
+    <hr>
+    <div>
+        <aside class="paragraph">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut nesciunt deserunt earum explicabo temporibus
+            optio natus minima unde saepe tenetur necessitatibus facilis consectetur eos, distinctio voluptas. Vitae rem
+            numquam delectus. <br><br>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut nesciunt deserunt earum explicabo temporibus
+            optio natus minima unde saepe tenetur necessitatibus facilis consectetur eos, distinctio voluptas. Vitae rem
+            numquam delectus. <br><br>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut nesciunt deserunt earum explicabo temporibus
+            optio natus minima unde saepe tenetur necessitatibus facilis consectetur eos, distinctio voluptas. Vitae rem
+            numquam delectus.<br><br>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut nesciunt deserunt earum explicabo temporibus
+            optio natus minima unde saepe tenetur necessitatibus facilis consectetur eos, distinctio voluptas. Vitae rem
+            numquam delectus.<br><br>
+        </aside>
+    </div>
+
+    <div class="profilecard">
+        <img src="data:image/jpeg;base64,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" alt="Avatar" style="width:40%">
+        <div class="container1">
+            <h4><b>John Doe</b></h4>
+            <p>Architect & Engineer</p>
+        </div>
+    </div>
+</div>
+<div>
+    <nav>
+        <a href="#home">HOME</a>
+        <a href="#SPEAKERS">SPEAKERS</a>
+        <a href="#SCHEDULE">SCHEDULE</a>
+        <a href="#VENUE">VENUE</a>
+        <a href="#REGISTER">REGISTER</a>
+    </nav><br><br>
+    </div>
+</div><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <div style="background-color:#244d60 ; "><br>
+        <span>
+            <h1 style="margin-left: 15%; color: #e7e7e7;">STYLES <BR> CONFERENCE</h1>
+        </span>
+        <span style="margin-top: -6% ;  margin-right: 15% ;" class="date">
+            <p>August 24-26th--Chicago,IL</p>
+        </span>
+        <nav>
+            <a href="#home">HOME</a>
+            <a href="#SPEAKERS">SPEAKERS</a>
+            <a href="#SCHEDULE">SCHEDULE</a>
+            <a href="#VENUE">VENUE</a>
+            <a href="#REGISTER">REGISTER</a>
+        </nav><br><br>
+    </div>
+    <div style="text-align: center; background-color: aquamarine;"><br>
+        <h2>SCHEDULE</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum consectetur ullam, quo corporis fuga veniam ipsum impedit sint nisi itaque non numquam perferendis est placeat ratione sequi esse accusamus eos?
+        </p><br>
+    </div>
+       <div style="margin-left:25vw; ">
+        <h3>WORKSHOP</h3>
+        <p>8:30AM</p>
+        <p>9:00AM</p>
+        <p id="time1" >12:30PM</p>
+        <p id="time2">2:00PM</p>
+       </div>
+       <div class="col2">
+        <p>August 24th</p>
+        <hr>
+        <p>Registration</p>
+        <hr>
+       
+    
+        <p><b>Adam Cannar</b><br>
+            Commercial International Design Inspiration <br>
+            from Filmmakers</p>
+        <p><b>Jennifer Jones</b><br>
+            What Designers Can Learn
+        </p>
+    
+    <hr>
+    
+    <p>Lunch</p>
+    <hr>
+    <p>
+        <b>Tessa Harmon</b><br>
+        Crafty Coding:Generating Knitting Patterns.
+    </p>
+    <p>
+        <b>Russ Unger</b><br>
+        From Muppets to Mastery Core UX Principles <br>
+        from Mr.Jim Herssion
+    </p>
+</div>
+<div id="div">
+    <div class="row13">
+        <h2>Conference</h2>
+        <p>8:30AM</p>
+        <p>9:00AM</p>
+        </div>
+        <div class="row13a">
+            <p>August 24th</p>
+            <hr>
+            <p>Registration</p>
+            <hr>
+            
+                <p><b>Vitaly Friedman</b><br>
+                    Responsive Web Design:Clever Tips and tricks
+                </p>
+            
+            <hr>
+        </div>
+        </div>
+<div style="background-color:#244d60 ; "><br>
+    <span>
+        <h1 style="margin-left: 15%; color: #e7e7e7;">STYLES <BR> CONFERENCE</h1>
+    </span>
+    <span style="margin-top: -6% ;  margin-right: 15% ;" class="date">
+        <p>August 24-26th--Chicago,IL</p>
+    </span>
+    <nav>
+        <a href="#home">HOME</a>
+        <a href="#SPEAKERS">SPEAKERS</a>
+        <a href="#SCHEDULE">SCHEDULE</a>
+        <a href="#VENUE">VENUE</a>
+        <a href="#REGISTER">REGISTER</a>
+    </nav><br><br>
+</div>
+<div style="text-align: center; background-color: aquamarine;"><br>
+    <h2>REGISTER</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum consectetur ullam, quo corporis fuga veniam ipsum
+        impedit sint nisi itaque non numquam perferendis est placeat ratione sequi esse accusamus eos?
+    </p><br>
+</div>
+<div class="ragister">
+    <h3>Purchase a Conference Pass</h3><br>
+    <p>$99 PER PASS</p><br><br>
+    <p id="reg" aria-hidden="true"></i>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, enim voluptates <br>
+        laborum sed atque
+        nisi. Voluptates illum a est sint nemo sit vero sed praesentium,<br> libero magnam, veniam voluptas incidunt,<br>
+        perspiciatis unde ipsum vitae <br> Amet ducimus, aliquam odit sunt sed tenetur doloremque dolores, aperiam,<br>
+        perspiciatis nobis ipsam minus libero </p><br>
+        <h3>Why Attend?</h3>
+        <ul>
+            <li>Over twenty world class speakers</li>
+            <li>One full day of workshops and two days of presentation</li>
+            <li>Hosted at Chicago Theatre,a historical landmark</li>
+            <li>August in Chicago is simply amazing </li>
+        </ul>
+        </div>
+    <div class="col5">
+        <form action="">
+            <label for="name">Name</label><br>
+            <input type="text" placeholder="Full name"><br><br>
+            <label for="email">Email</label><br>
+            <input type="email" placeholder="Email address"><br><br>
+            <label for="Number Of Passes">Number Of Passes</label><br>
+            <select name="number">
+                <option value=''></option>
+            </select><br><br>
+        <label for="comment"></label>
+        <label for=" comments">comments</label><br>
+        <textarea name="" id="" cols="30" rows="5" placeholder="Type your opinion"></textarea><br><br>
+        <button id="button">PURCHASE</button>
+               
+
+                </div>
+                <div style="background-color:#244d60 ; margin-top: -38vh; "><br>
+                    <span>
+                        <h1 style="margin-left: 15%; color: #e7e7e7;">STYLES <BR> CONFERENCE</h1>
+                    </span>
+                    <span style="margin-top: -6% ;  margin-right: 15% ;" class="date">
+                        <p>August 24-26th--Chicago,IL</p>
+                    </span>
+                    <nav>
+                        <a href="#home">HOME</a>
+                        <a href="#SPEAKERS">SPEAKERS</a>
+                        <a href="#SCHEDULE">SCHEDULE</a>
+                        <a href="#VENUE">VENUE</a>
+                        <a href="#REGISTER">REGISTER</a>
+                    </nav><br><br>
+                </div>
+                
+</body>
+
+</html>
+
+
+
+
+
+
+
+
